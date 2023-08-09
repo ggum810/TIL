@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bell1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toLeftOf="@+id/title"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="90dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/outline_notifications_bell_24"
+                android:textColor="@color/black">
+            </Button>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:text="AIJIN"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@android:color/black">
+            </TextView>
+
+            <Button
+                android:id="@+id/search1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/title"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="55dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/baseline_search_24"
+                android:textColor="@color/black">
+            </Button>
+
+            <Button
+                android:id="@+id/setting1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/title"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="90dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/outline_settings_24"
+                android:textColor="@color/black">
+            </Button>
+
+            <FrameLayout
+                android:layout_gravity="center"
+                android:layout_width="400dp"
+                android:layout_height="400dp">
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager"
+                    android:layout_gravity="center"
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_marginBottom="10dp"/>
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"/>
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
