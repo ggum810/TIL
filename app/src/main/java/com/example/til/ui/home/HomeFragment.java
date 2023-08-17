@@ -20,6 +20,7 @@ import com.example.til.Settingpage;
 import com.example.til.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
+    TextView tvTitle;
 
     private FragmentHomeBinding binding;
 

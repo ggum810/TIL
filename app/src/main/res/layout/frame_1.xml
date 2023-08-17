@@ -6,6 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <!--homeviewpage에 들어가는 프레임 레이아웃-->
     <TextView
         android:text="1"
         android:layout_width="400dp"

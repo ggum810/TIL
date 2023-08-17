@@ -6,14 +6,14 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <!--homeviewpage에 들어가는 프레임 레이아웃-->
     <TextView
-        android:text="2"
+        android:text="4"
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:textSize="50dp"
         android:gravity="center"
         android:textColor="#000000"
-        android:background="#AACDD2"/>
+        android:background="#D1C4E9"
+        />
 
 </LinearLayout>
