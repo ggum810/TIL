@@ -25,6 +25,10 @@
         <activity android:name=".Bellpage"></activity>
         <activity android:name=".Searchpage"></activity>
         <activity android:name=".Settingpage"></activity>
+        <activity
+            android:name=".PopupActivity"
+            android:label="Popup Activity"
+            android:theme="@style/AppTheme.PopupOverlay"/>
     </application>
 
 </manifest>

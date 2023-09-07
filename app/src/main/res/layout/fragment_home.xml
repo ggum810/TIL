@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".ui.home.HomeFragment">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -66,23 +65,26 @@
             </Button>
 
             <FrameLayout
+                android:id="@+id/FrameL1"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
                 android:layout_below="@id/title"
                 android:layout_marginTop="10dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true">
 
                 <!--뷰페이지 구성-->
+
+                <!--화면 전 표시기능-->
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/viewpager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:clipToPadding="false"
+                    android:layout_marginBottom="10dp"
                     android:clipChildren="false"
-                    android:scaleType="fitXY"
-                    android:layout_marginBottom="10dp"/>
+                    android:clipToPadding="false"
+                    android:scaleType="fitXY" />
 
-               <!--화면 전 표시기능-->
                 <me.relex.circleindicator.CircleIndicator3
                     android:id="@+id/indicator"
                     android:layout_width="match_parent"
@@ -92,6 +94,68 @@
 
         </FrameLayout>
 
+
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/FrameL1"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="실시간 추천 피드 맞춤"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_below="@+id/text2"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+
+                android:text="나의 취향에 맞는 추천 게시물을 둘러보세요"
+                android:textColor="#848484"
+                android:textSize="15dp"
+                />
+
+
+            <FrameLayout
+                android:id="@+id/FrameL2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_below="@id/text3"
+                android:layout_gravity="center"
+                >
+
+                <!--뷰페이지 구성2-->
+
+                <!--화면 전 표시기능2-->
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager2"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:scaleType="fitXY" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/indicator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"/>
+
+            </FrameLayout>
 
         </RelativeLayout>
     </ScrollView>

@@ -8,12 +8,15 @@
 
     <!--homeviewpage에 들어가는 프레임 레이아웃-->
     <TextView
-        android:text="1"
+        android:text="강렬한 \n    Black"
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:textSize="50dp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:background="#FFCDD2"/>
+        android:gravity="bottom"
+        android:textStyle="bold"
+        android:adjustViewBounds="true"
+        android:textColor="@color/white"
+        android:background="@drawable/model2"
+        />
 
 </LinearLayout>
